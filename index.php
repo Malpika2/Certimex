@@ -14,8 +14,9 @@ session_start();
     <meta name="description" content="Certificadora Mexicana">
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
     <link rel="shortcut icon" href=".ico">  
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    
 	<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.css">
 	
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -25,6 +26,7 @@ session_start();
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
     <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/full-slider.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/style.css">
@@ -33,8 +35,7 @@ session_start();
 	<link rel="stylesheet" href="assets/css/tinycarousel.css" type="text/css" media="screen"/>
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
-	<!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+	<!-- Global CSS --> 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -46,16 +47,20 @@ session_start();
 <body>
     <!-- ******HEADER****** --> 
     <header id="header" class="header">  
-        <div class="container" >    
+        <div class="container">
+			<div class="row">
+			<div class=" contlogos col-xl-12">
             <h1 class="logo">
                 <a class="scrollto" href="#myCarousel">
-                    <div class="img_logo"><img src="Imagenes/certimex-logo.png" alt="icon-certimex"/></div>
+                    <div class="img_logo"><img src="Imagenes/certimex-logo2.png" alt="icon-certimex"/></div>
 					<div class="text_logo"><h1><strong>Certimex</strong></h1></div>
 				</a>
             </h1><!--logo-->
-            <nav class="main-nav navbar-right" role="navigation">
+			</div>
+			<div class="col-xl-12" style="text-align:center">
+            <nav class="main-nav navbar-default" role="navigation" style=" text-align:center; display: inline-block;float: none;vertical-align: top;min-height: 5px;margin-bottom: 5px;">
                 <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse" style="position:fixed">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -64,12 +69,23 @@ session_start();
                 </div><!--//navbar-header-->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active nav-item"><a class="scrollto" href="#acerca">CONOCENOS</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#servicios">SERVICIOS</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#procedimientos">PROCEDIMIENTOS</a></li>       
-                        <li class="nav-item"><a class="scrollto" href="#ultimasn">ULTIMAS NOTICIAS</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#contacto">CONTACTO</a></li>
-						<li class="dropdown nav-item">
+                        <li class="active nav-item" style="top:0px"><a class="scrollto" href="#acerca">CONOCENOS</a></li>
+                        <li class="nav-item" style="top:0px"><a class="scrollto" href="#servicios">SERVICIOS</a></li>
+                        <li class="nav-item" style="top:0px"><a class="scrollto" href="#procedimientos">PROCEDIMIENTOS</a></li>       
+                        <li class="nav-item" style="top:0px"><a class="scrollto" href="#ultimasn">ULTIMAS NOTICIAS</a></li>
+                        <li class="nav-item" style="top:0px"><a class="scrollto" href="#contacto">CONTACTO</a></li>
+						<li class="dropdown nav-item" style="top:0px">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">CONSULTAS<span class="caret"></span></a>
+							<ul id="menucons" class="dropdown-menu">
+								<li>
+									<a class="scrollTo" href="#listanegra">Empresas </br>No autorizadas</a>
+								</li>
+								<li>
+									<a class="scrollTo" href="#directorio">Directorio</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown nav-item" style="top:0px;">
 							<a href="#inicio" class="dropdown-toggle" data-toggle="dropdown">LOGIN<span class="caret"></span></a>
 							<ul id="menudp" class="dropdown-menu">
 								<li>
@@ -101,11 +117,13 @@ session_start();
 						</li>
                     </ul><!--//nav-->
                 </div><!--//navabr-collapse-->
-            </nav><!--//main-nav-->                     
+            </nav><!--//main-nav-->  
+			</div>
+			</div>
         </div><!--//container-->
     </header><!--//header-->
     
-	    <div id="myCarousel" class="carousel slide" style="padding:0% 0% 0% 0%">
+	    <div id="myCarousel" class="carousel slide carousel-fade" style="padding:0% 0% 0% 0%">
         <!-- Indicators -->
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
@@ -119,26 +137,27 @@ session_start();
 									$clase="\"item active\"";
 								}else{$clase="\"item\"";}
 								echo "<div class=$clase>";
-							echo "<div class=\"fill\" style=\"background-image:url(certimexx/$fila[3]); background-repeat:no-repeat;\">";
-									echo "<div style=\"padding:18% 0% 0% 0% ; \"><h2 style=\"color:#0CE201; background-color:rgba(13, 13, 13, .4); font-size:34px; text-align:center;\"><b>$fila[0]</b></h2></div>
-										  </div>";
-									echo "<div class=\"carousel-caption\">";
-									echo "<div class=\"text-center\"  style=\"background-color:rgba(13, 13, 13, .4)\">";	
-										
-										echo "<div style=\"color:#FFFFFF\" text-align:justify;\" ><h3 >$fila[1]</h3>";
-										if($fila[2]!=""){
-										echo "<a class=\"btn btn-success \" href=\"$fila[2]\"> Saber más...</a>";}
-										echo "</div></div>";
+									echo "<div class=\"fill\" style=\"background-image:url(certimexx/$fila[3]); background-repeat:no-repeat;\">";
+									echo "<div class=\"fill\" style=\"background-color:RGBA(13,13,13,0.4)\"> </div>";
+										echo "<div class=\"carousel-caption\" style=\"top:100px\">";
+											echo "<div class=\"text-center\">";	
+												echo "<div ><h2 style=\"color:#0CE201; font-size:34px; text-align:center;\"><b>$fila[0]</b></h2></div>";
+												echo "<div style=\"color:#ffff; text-align:justify;\" ><h3 >$fila[1]</h3>";
+													if($fila[2]!=""){
+													echo "<a class=\"btn btn-success \" href=\"$fila[2]\"> Saber más...</a>";}
+												echo "</div>";
+											echo "</div>";
 										echo "</div>";
+									echo "</div>";
 								echo "</div>";
 								
 							$conta++;
 							}
 							
 						?>        
-			<div class="left carousel-control"href="#myCarousel" data-slide="prev">
+			<a class="left carousel-control"href="#myCarousel" data-slide="prev">
             <span class="icon-prev"></span>
-			</div>
+			</a>
 			<a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
 			</a>
@@ -501,7 +520,7 @@ session_start();
 </section> 
 
 <!--======== SECCION LISTA NEGRA=====-->
-<section id="blackList" class="blackList">
+<section id="listanegra" class="blackList">
 <div class="panel-group" id="accordion">
   <div class="panel panel-default">
     <div class="panel-heading">
