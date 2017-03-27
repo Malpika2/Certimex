@@ -125,7 +125,7 @@ session_write_close();?>
                                     <div class="tab-pane fade active in" id="inicio">
                                     </div>
                                     <div class="tab-pane fade" id="formulario">
-                                        <form role="form" name="subirNot" enctype="multipart/form-data" method="post" action="../Procesos/ListaNegra.php">
+                                        <form role="form" name="subirNot" enctype="multipart/form-data" method="post" action="../Procesos/listanegra.php">
                                             <div class="panel-heading">
                                                 <div class="form-group">
                                                     <label>Registrar Empresa</label>
