@@ -24,6 +24,7 @@ session_start();
 	<script type="text/javascript" src="table.js"></script>
 	<script type="text/javascript" src="table2.js"></script>
     <!-- Plugins CSS -->
+
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
     <!-- Theme CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
@@ -33,8 +34,11 @@ session_start();
 	<link href="assets/css/imagenes.css" rel="stylesheet">
 	<!-- Tiny carrousel-->
 	<link rel="stylesheet" href="assets/css/tinycarousel.css" type="text/css" media="screen"/>
+	<link href="assets/css/creative.css" rel="stylesheet">
+
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+
 	<!-- Global CSS --> 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -141,10 +145,10 @@ session_start();
 									echo "<div class=\"fill\" style=\"background-color:RGBA(13,13,13,0.4)\"> </div>";
 										echo "<div class=\"carousel-caption\" style=\"top:100px\">";
 											echo "<div class=\"text-center\">";	
-												echo "<div ><h2 style=\"color:#0CE201; font-size:34px; text-align:center;\"><b>$fila[0]</b></h2></div>";
-												echo "<div style=\"color:#ffff; text-align:justify;\" ><h3 >$fila[1]</h3>";
+												echo "<div ><h2 style=\"color:white; font-size:75px; text-align:center; padding-top:150px; font-family:'Proxyma nova';\"><b>$fila[0]</b></h2></div>";
+												echo "<div style=\"color:#ffff; text-align:center;\" ><h3 style=\"font-family:'Monotype Corsiva'; font-size:30px;\">$fila[1]</h3>";
 													if($fila[2]!=""){
-													echo "<a class=\"btn btn-success \" href=\"$fila[2]\"> Saber más...</a>";}
+													echo "<a class=\"btn btn-inicio \" href=\"$fila[2]\">INFORMACIÓN</a>";}
 												echo "</div>";
 											echo "</div>";
 										echo "</div>";
@@ -306,13 +310,33 @@ session_start();
 	</section>
    
 <!-- =========================  SERVICIOS SECCION ============ -->
-<section id="servicios" class="servicios"  style=" padding:0% 0% 0% 0%; background-color:#ECE9E9;">
+<section id="servicios" class="servicios"  style=" padding:0% 0% 0% 0%; background-image: url('Imagenes/mesaverduras.jpg'); background-size: 100%; background-repeat: no-repeat;">
 <div class="slide-section destination" id="servicios" page-slide="3" style="padding-top: 2%">
 	<div class="kontainer klearfix">
 		<div id="content" class="grid_12 destination-up" page-slide="4">
 			<h2><b>SERVICIOS</b></h2>
+
+                <div class="col-lg-12 col-sm-">
+                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
 			<hr>
-					<div id="slider1" style="height:400px; background-color:#FFFF; padding-top:1%">
+
+					<div id="slider1" style="height:400px; padding-top:1%">
 						<a class="buttons prev" href="#">&#60;</a>
 						<div class="viewport" style="height:500px">
 							<ul class="overview">
@@ -322,7 +346,7 @@ session_start();
 									$servicios= $mysqli->query($sql);
 									while($fila = $servicios->fetch_row()){
 										$titulo=strtoupper($fila[1]);
-										echo"<li><div>
+										echo"<li style=\"width:400px; margin:0px 0px 0px 0px\"><div class=\"serviciosdiv\">
 														<div><img class=\"imagen-centro\" src=\"img_servicios/$fila[3]\" alt=\"image\"</div>
 														<div><h3 class=\"item-title\">$titulo</h3></div>
 														<div style=\"height:100px; overflow:scroll\"><p  class=\"sz-content\">$fila[2]</p></div>
@@ -519,7 +543,7 @@ session_start();
     </div><!--//ULTIMAS NOTICIAS SECCION-->
 </section> 
 
-<!--======== SECCION LISTA NEGRA=====-->
+<!--======== SECCION LISTA NEGRA=====--
 <section id="listanegra" class="blackList">
 <div class="panel-group" id="accordion">
   <div class="panel panel-default">
@@ -535,7 +559,7 @@ session_start();
 				<div class="item col-md-12 col-sm-12 col-xs-12">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 									<div class="table-responsive" style="padding:0% 10%">
-										<!--table class="table table-bordered table-hover" id="example"-->
+										<!--table class="table table-bordered table-hover" id="example"--
 										<table id="example2" class="display table table-bordered" cellspacing="5" width="99%" >
 											<thead>
 												<tr>
@@ -563,15 +587,15 @@ session_start();
 									</div>
 								</div>
 				</div>
-			</div><!-- ROW -->
+			</div><!-- ROW --
 	  </div>
     </div>
   </div>
 </div> 
-</section>
+</section-->
 
-
-<section id="directorio" class="contacto-section">
+<!--
+<section id="directorio" class="directorio-section">
 		<div class="panel-group" id="accordion">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -625,67 +649,86 @@ session_start();
     </div>
   </div>
 </div> 
-</section>
+</section>-->
 
 
 
 
 <section id="contacto" class="contacto-section" style="padding:0% 0% 0% 0%">
 		<div id="contacto" class="contacto-section">
-			<div class="container" style="background-image: url(Imagenes/.png); background-size:100% 100%; padding:0% 0% 1% 0%">
-				<h2 class="section-title">Contáctanos</h2>
+			<div class="container">
+				<h2 class="section-title" style="text-align: center;">¿Esta listo para comenzar su certificaciòn?</h2>
+				<p style="text-align: center;">¡Nosotros También! Rellene el siguiente formulario y nos pondremos en contacto con usted.</p>
 				<hr>
 				<div class="row">
 				
-					<div class="col-xs-12 col-sm-6 col-md-6">
-						 <form class="form-horizontal" name="enviarcorreo" method="POST" action="Procesos/correo.php">
-							<div class="form-group">
-								<div>	</div>
-								<label for="name">Nombre</label>
-								<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required/>
-							</div>
-							<div class="form-group">
-								<label for="email">Correo</label>
-								<input type="text" class="form-control" id="email" name="email" placeholder="correo Electrónico" required/> 
-							</div>
-							<div class="form-group">
-								<label for="mensaje">Mensaje</label>
-								<textarea class="form-control" id="mensaje" name="mensaje" placeholder="Escriba su mensaje" required></textarea>
-							</div>
-							<button type="submit" class="btn btn-success">Enviar Mensaje</button>
-						 </form>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						<div class="col-xs-12 col-sm-12 col-md-12" style="text-align: center;">
+							<a href="https://www.facebook.com/certimex.certificadoramexicana" class="btn btn-inicio btn-lg" target="_blank"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a>
+							<hr>
+						</div>	 
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<p> Direccion</p>
+							<p>Calle 16 de Septiembre 204, Colonia Ejido Guadalupe Victoria, Oaxaca de Juárez, Oaxaca, México.</p>
+						</div>
 					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6">
-					<div class="row">
-						<ul class="list-inline">
-							<li>
-								<div class="col-xs-12 col-sm-12 col-md-12">
-									<p> Direccion</p>
-									<p>Calle 16 de Septiembre 204, Colonia Ejido Guadalupe Victoria, Oaxaca de Juárez, Oaxaca, México.</p>
-								</div>
-							</li>
-							<li>
-								<div class="col-xs-12 col-sm-12 col-md-12" >
-									<p>Telefono</p>
-									<p>01 951 520 2687 - 01 951 520 0617</p>
-								</div>
-							</li>
-							<li>
-								<div class="col-xs-12 col-sm-12 col-md-12">
-									<p> Correo </p>
-									<p>Certimex@certimexsc.com</p>
-								</div>
-							</li>
-							<li>
-							<div class="col-xs-12 col-sm-12 col-md-12" style="padding-left: 30%">
-									<a href="https://www.facebook.com/certimex.certificadoramexicana" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a>
-
-									<a href="https://twitter.com/Certimex" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a>
-									
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<form class="form-horizontal" name="enviarcorreo" method="POST" action="Procesos/correo.php">
+							<div class="col-md-12">
+							<div class="form__field">
+								<label for="name"><p style="font-size: 20px;color:#738694; margin: 0%; padding: 5px 0% 0% 0%;" >Su Nombre</p></label>
+								<input type="text" class="form__input" id="nombre" name="nombre" placeholder="" required/>
 							</div>
-							</li>
-						</ul>
+							</div>
+							<div class="col-md-6">
+							<div class="form__field">
+								<label for="email"><p style="font-size: 20px;color:#738694; margin-top: 20px; padding: 5px 0% 0% 0%; margin-bottom: 0px;" >Correo Electrónico</p></label>
+								<input type="text" class="form__input" id="email" name="email" placeholder="" required/> 
+							</div>
+							</div>
+							<div class="col-md-6">
+							<div class="form__field">
+								<label for="email"><p style=" font-size: 20px;color:#738694; margin-top:20px; padding: 5px 0% 0% 0%; margin-bottom: 0px; ">Página Web</p></label>
+								<input type="text" class="form__input" id="email" name="email" placeholder="" required/> 
+							</div>
+							</div>
+							<div class="col-md-6">
+							<div class="form__field">
+								<label for="email"><p style="font-size: 20px; color:#738694; margin-top: 20px; padding: 5px 0% 0% 0%; margin-bottom: 0px;">Número de Teléfono</p></label>
+								<input type="text" class="form__input" id="email" name="email" placeholder="" required/> 
+							</div>
+							</div>
+							<div class="col-md-6">
+							<div class="form__field">
+								<label for="email"><p style="font-size: 20px;color:#738694; margin-top: 20px; padding: 5px 0% 0% 0%; margin-bottom: 0px;">Empresa</p></label>
+								<input type="text" class="form__input" id="email" name="email" placeholder="" required/> 
+							</div>
+							</div>
+							<div class="col-md-12">
+							<div class="form__field">
+								<label for="mensaje"><p style="font-size: 20px;color:#738694; margin-top: 20px; padding: 5px 0% 0% 0%; margin-bottom: 0px;">Mensaje</p></label>
+								<textarea class="form__input" style="height: 80px; max-height: 100px;resize: none; rows:2 ;overflow: scroll;" id="mensaje" name="mensaje" placeholder="" required></textarea>
+							</div>
+							</div>
+							<div class="col-md-12" style="text-align: center;">
+							<button type="submit" class="btn btn-inicio">Enviar Mensaje</button></br></button>
+							</div>
+						</form>
 					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						<div class="col-xs-12 col-sm-12 col-md-12" style="text-align: center;">
+							<a href="https://twitter.com/Certimex" class="btn btn-inicio btn-lg" target="_blank"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a>
+							<hr>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12" >
+							<p>Telefono</p>
+							<p>01 951 520 2687 - 01 951 520 0617</p>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<p> Correo </p>
+							<p>Certimex@certimexsc.com</p>
+						</div>
+							
 					</div>
 			   
 				</div>
