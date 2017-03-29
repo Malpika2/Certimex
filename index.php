@@ -145,8 +145,8 @@ session_start();
 									echo "<div class=\"fill\" style=\"background-color:RGBA(13,13,13,0.4)\"> </div>";
 										echo "<div class=\"carousel-caption\" style=\"top:100px\">";
 											echo "<div class=\"text-center\">";	
-												echo "<div ><h2 style=\"color:white; font-size:75px; text-align:center; padding-top:150px; font-family:'Proxyma nova';\"><b>$fila[0]</b></h2></div>";
-												echo "<div style=\"color:#ffff; text-align:center;\" ><h3 style=\"font-family:'Monotype Corsiva'; font-size:30px;\">$fila[1]</h3>";
+												echo "<div ><h2 style=\"color:white; font-size:75px; text-align:center; padding-top:150px; font-family:'quarto';\"><b>$fila[0]</b></h2></div>";
+												echo "<div style=\"color:#ffff; text-align:center;\" ><h3 style=\"font-family:'avenir'; font-size:30px;\">$fila[1]</h3>";
 													if($fila[2]!=""){
 													echo "<a class=\"btn btn-inicio \" href=\"$fila[2]\">INFORMACIÓN</a>";}
 												echo "</div>";
@@ -310,35 +310,17 @@ session_start();
 	</section>
    
 <!-- =========================  SERVICIOS SECCION ============ -->
-<section id="servicios" class="servicios"  style=" padding:0% 0% 0% 0%; background-image: url('Imagenes/mesaverduras.jpg'); background-size: 100%; background-repeat: no-repeat;">
-<div class="slide-section destination" id="servicios" page-slide="3" style="padding-top: 2%">
+<section id="servicios" class="servicios fill"  style=" padding:0% 0% 0% 0%; background-image: url('Imagenes/mesanegraverduras.jpg'); min-height: 500px">
+<div class="slide-section destination" id="servicios" page-slide="3" style="padding-top: 0%; width:100%; height: 100%">
 	<div class="kontainer klearfix">
 		<div id="content" class="grid_12 destination-up" page-slide="4">
-			<h2><b>SERVICIOS</b></h2>
 
-                <div class="col-lg-12 col-sm-">
-                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-
-
+			
+			<h2 style="padding-top: 20px;"><b style="font-family: 'quarto';font-size: 60px; color:white;">NUESTROS SERVICIOS</b></h2>
 			<hr>
-
-					<div id="slider1" style="height:400px; padding-top:1%">
+					<div id="slider1" style="height:400px; padding-top:0%">
 						<a class="buttons prev" href="#">&#60;</a>
-						<div class="viewport" style="height:500px">
+						<div class="viewport" style="height:100%">
 							<ul class="overview">
 								<?php
 								include("Procesos/conexion.php");
@@ -346,13 +328,25 @@ session_start();
 									$servicios= $mysqli->query($sql);
 									while($fila = $servicios->fetch_row()){
 										$titulo=strtoupper($fila[1]);
-										echo"<li style=\"width:400px; margin:0px 0px 0px 0px\"><div class=\"serviciosdiv\">
-														<div><img class=\"imagen-centro\" src=\"img_servicios/$fila[3]\" alt=\"image\"</div>
-														<div><h3 class=\"item-title\">$titulo</h3></div>
-														<div style=\"height:100px; overflow:scroll\"><p  class=\"sz-content\">$fila[2]</p></div>
-														<div><img class=\"imagen-centro\" style=\"width:100%\" src=\"Imagenes/cestoinf.png\" alt=\"image\"></div>
-										
-										</div></li>";
+										echo"<li style=\"width:400px; margin:0px 0px 0px 0px; padding-top:5px;\">
+												<div class=\"serviciosdiv\">
+													<a href=\"\" class=\"portfolio-box\">
+														<h3 class=\"\" style=\"color:#00cc96;\">$titulo</h3>
+														<img class=\"img-responsive imagen-centro\" src=\"img_servicios/$fila[3]\" alt=\"imagen\"/>
+								                        <div class=\"portfolio-box-caption\">
+															<div class=\"portfolio-box-caption-content\">
+								                                <div class=\"project-category text-faded\">
+								                                    
+								                                </div>
+								                                <div class=\"project-name\">
+								                                    <b style=\"color:white; font-size:20px; \"class=\"sz-content\">$fila[2]</b>
+								                                </div>
+															
+															</div>
+								                        </div>
+								                    </a>
+												</div>
+											</li>";
 									}
 								?>
 							</ul>
@@ -367,12 +361,12 @@ session_start();
 </section>
 
 <!-- =========================  PROCEDIMIENTOS SECCION ============ -->
- <section id="procedimientos" class="services bg-primary" style="background-color:green">
+ <section id="procedimientos" class="services bg-primary" style="background-color:#f8f5f0">
         <div class="container" style="padding:2% 0% 1% 0%">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>PROCEDIMIENTOS</h2>
-					<strong>Contribuye a la conservación y mejoramiento de los recursos naturales y el medio ambiente.</strong>
+                    <h2 style="font-family: 'quarto'; font-size: 60px;">PROCEDIMIENTOS</h2>
+					<p><strong>Contribuye a la conservación y mejoramiento de los recursos naturales y el medio ambiente.</strong></p>
                     <hr class="small">
                     <div class="row" style="background-color:white">
                         <div class="col-md-3 col-sm-6">
@@ -442,7 +436,7 @@ session_start();
 				<div class="col-md-12" style="padding-top:2%">
                     <div class="panel panel-default" style="border:0px">
                         <div class="panel-heading" style="background-color:rgba(0, 0, 0, 0.0); border:0px">
-							<h2 class="section-title" style="color:black">ULTIMAS NOTICIAS</h2>
+							<h2 class="section-title" style="color:black; font-family: 'quarto'; font-size: 60px;" >ULTIMAS NOTICIAS</h2>
                         </div>
 						
 						<!--===NUEVA SECCION NOTICIAS">>>-->
@@ -662,21 +656,14 @@ session_start();
 				<hr>
 				<div class="row">
 				
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-						<div class="col-xs-12 col-sm-12 col-md-12" style="text-align: center;">
-							<a href="https://www.facebook.com/certimex.certificadoramexicana" class="btn btn-inicio btn-lg" target="_blank"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a>
-							<hr>
-						</div>	 
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<p> Direccion</p>
-							<p>Calle 16 de Septiembre 204, Colonia Ejido Guadalupe Victoria, Oaxaca de Juárez, Oaxaca, México.</p>
-						</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+							 
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 						<form class="form-horizontal" name="enviarcorreo" method="POST" action="Procesos/correo.php">
 							<div class="col-md-12">
 							<div class="form__field">
-								<label for="name"><p style="font-size: 20px;color:#738694; margin: 0%; padding: 5px 0% 0% 0%;" >Su Nombre</p></label>
+								<label for="name"><p style="font-size: 20px;color:#738694; margin: 0%; padding: 5px 0% 0% 0%;" >Nombre</p></label>
 								<input type="text" class="form__input" id="nombre" name="nombre" placeholder="" required/>
 							</div>
 							</div>
@@ -715,19 +702,7 @@ session_start();
 							</div>
 						</form>
 					</div>
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-						<div class="col-xs-12 col-sm-12 col-md-12" style="text-align: center;">
-							<a href="https://twitter.com/Certimex" class="btn btn-inicio btn-lg" target="_blank"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a>
-							<hr>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-12" >
-							<p>Telefono</p>
-							<p>01 951 520 2687 - 01 951 520 0617</p>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-12">
-							<p> Correo </p>
-							<p>Certimex@certimexsc.com</p>
-						</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
 							
 					</div>
 			   
@@ -736,8 +711,31 @@ session_start();
 		</div>
     </section> 
     <!-- Footer -->
-    <footer>
-		       
+
+    <footer style="margin:0px 0px;"> 
+    					<div class="col-lg-12" style="background-color:black; margin: 0px; text-align: center;">
+    						<div class="col-lg-4">
+    						<div class="col-xs-12 col-sm-12 col-md-12" style="text-align: center;">
+							<a href="https://www.facebook.com/certimex.certificadoramexicana" class="btn btn-inicio btn-lg" target="_blank"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a>
+							<hr>
+							</div>
+    							<p>Calle 16 de Septiembre 204, Colonia Ejido Guadalupe Victoria, Oaxaca de Juárez, Oaxaca, México.</p>
+    						</div>
+    						<div class="col-lg-4">
+    						<div class="col-xs-12 col-sm-12 col-md-12" style="text-align: center;">
+							<a href="https://twitter.com/Certimex" class="btn btn-inicio btn-lg" target="_blank"><i class="fa fa-instagram"> <span class="network-name">Instagram</span></i></a>
+							<hr>
+						</div>
+    							<p>01 951 520 2687 - 01 951 520 0617</p>
+    						</div>
+    						<div class="col-lg-4">
+    												<div class="col-xs-12 col-sm-12 col-md-12" style="text-align: center;">
+							<a href="https://twitter.com/Certimex" class="btn btn-inicio btn-lg" target="_blank"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a>
+							<hr>
+						</div>
+    							<p>Certimex@certimexsc.com</p>
+    						</div>
+						</div>	       
     </footer>
      
     <!-- Javascript -->          

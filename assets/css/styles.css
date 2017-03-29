@@ -15,22 +15,41 @@
   /* -moz-osx-font-smoothing: grayscale; */
 /* } */
 @font-face {
+    font-family:'quarto';
+    src: url('../Fonts/quarto.eot');
+  src: url('../Fonts/quarto.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/quarto.woff2') format('woff2'),
+    url('../Fonts/quarto.woff') format('woff')
+
+    font-stretch: normal;
+    unicode-range: U+0020-F003;
+}
+@font-face {
     font-family:'Monotype Corsiva';
     src: url('../Fonts/Monotype Corsiva.eot');
-	src: url('../Fonts/Monotype Corsiva.eot?#iefix') format('embedded-opentype'),
-		url('../Fonts/Monotype Corsiva.woff2') format('woff2'),
-		url('../Fonts/Monotype Corsiva.woff') format('woff'),
-		url('../Fonts/Monotype Corsiva.svg#Monotype Corsiva') format('svg');
+  src: url('../Fonts/Monotype Corsiva.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/Monotype Corsiva.woff2') format('woff2'),
+    url('../Fonts/Monotype Corsiva.woff') format('woff'),
+    url('../Fonts/Monotype Corsiva.svg#Monotype Corsiva') format('svg');
     font-weight: 400;
     font-style: italic;
     font-stretch: normal;
     unicode-range: U+0020-F003;
 }
+@font-face {
+    font-family:'avenir';
+    src: url('../Fonts/avenir.eot');
+  src: url('../Fonts/avenir.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/avenir.woff') format('woff');
+    font-stretch: normal;
+    unicode-range: U+0020-F003;
+}
 #servicios .serviciosdiv{
-  background-color: transparent;
-  border-color: red;
+  background-color: rgba(3,3,3,0.8);
+  border-color: #00cc96;
   border-style: solid none solid solid;
-  color:transparent;
+  color:white;
+  text-align: center;
 }
 
 .serviciosdiv:hover,
@@ -433,8 +452,8 @@ color:#white;
 	background-size:100%;
 	background-repeat:no-repeat;
 }
-#procedimientos H4, p{
-	color:#999;
+#procedimientos h2, p{
+	color:#41515c;
 }
 
 /*NOTICIAS!==================*/
