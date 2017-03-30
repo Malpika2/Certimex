@@ -27,7 +27,8 @@ session_start();
 
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="assets/css/combined-min.css">  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/full-slider.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/style.css">
@@ -143,10 +144,10 @@ session_start();
 								echo "<div class=$clase>";
 									echo "<div class=\"fill\" style=\"background-image:url(certimexx/$fila[3]); background-repeat:no-repeat;\">";
 									echo "<div class=\"fill\" style=\"background-color:RGBA(13,13,13,0.4)\"> </div>";
-										echo "<div class=\"carousel-caption\" style=\"top:100px\">";
+										echo "<div class=\"carousel-caption\" style=\"top:1%\">";
 											echo "<div class=\"text-center\">";	
-												echo "<div ><h2 style=\"color:white; font-size:75px; text-align:center; padding-top:150px; font-family:'quarto';\"><b>$fila[0]</b></h2></div>";
-												echo "<div style=\"color:#ffff; text-align:center;\" ><h3 style=\"font-family:'avenir'; font-size:30px;\">$fila[1]</h3>";
+												echo "<div ><h2 style=\"color:white; text-align:center; padding-top:45%; font-family:'quarto';\"><b>$fila[0]</b></h2></div>";
+												echo "<div style=\"color:#ffff; text-align:center;\" ><h3 style=\"font-family:'avenir';\">$fila[1]</h3>";
 													if($fila[2]!=""){
 													echo "<a class=\"btn btn-inicio \" href=\"$fila[2]\">INFORMACIÓN</a>";}
 												echo "</div>";
@@ -317,8 +318,8 @@ session_start();
 
 			
 			<h2 style="padding-top: 20px;"><b style="font-family: 'quarto';font-size: 60px; color:white;">NUESTROS SERVICIOS</b></h2>
-			<hr>
-					<div id="slider1" style="height:400px; padding-top:0%">
+			<hr style="margin-top: 8px; margin-bottom: 0px;">
+					<div id="slider1" style="height:600px; padding-top:15px; background: black;">
 						<a class="buttons prev" href="#">&#60;</a>
 						<div class="viewport" style="height:100%">
 							<ul class="overview">
@@ -328,7 +329,7 @@ session_start();
 									$servicios= $mysqli->query($sql);
 									while($fila = $servicios->fetch_row()){
 										$titulo=strtoupper($fila[1]);
-										echo"<li style=\"width:400px; margin:0px 0px 0px 0px; padding-top:5px;\">
+										echo"<li style=\"width:400px; margin:0px 0px 0px 0px; padding-top:0px;\">
 												<div class=\"serviciosdiv\">
 													<a href=\"\" class=\"portfolio-box\">
 														<h3 class=\"\" style=\"color:#00cc96;\">$titulo</h3>
@@ -353,7 +354,7 @@ session_start();
 						</div>
 						<a class="buttons next" href="#">&#62;</a>
 					</div>
-			<hr>
+			<hr style="margin-top: 30px; margin-bottom: 0px;">
 		</div>
 
 	</div><!--//servicios-section ó servicios-->
@@ -365,59 +366,64 @@ session_start();
         <div class="container" style="padding:2% 0% 1% 0%">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2 style="font-family: 'quarto'; font-size: 60px;">PROCEDIMIENTOS</h2>
+                    <h2 >PROCEDIMIENTOS</h2>
 					<p><strong>Contribuye a la conservación y mejoramiento de los recursos naturales y el medio ambiente.</strong></p>
                     <hr class="small">
-                    <div class="row" style="background-color:white">
+                    <div class="row" style="">
                         <div class="col-md-3 col-sm-6">
-                            <div class="service-item cont-proc">
-                                <span class="fa-stack fa-4x">
-								<img src="Imagenes/pic6.jpg"/>
-								</span>
-								<img src="Imagenes/shadows.png"/>
-                                <h4>
-                                    <strong>INSPECCIÓN Y CERTIFICACIÓN</strong>
-                                </h4>
-                                <p>Procedimiento para la inspeción y certificación de productos orgánicos.</p>
-                              <!--  <a href="#" class="btn btn-light">Learn More</a>-->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-								<img src="Imagenes/pic4.jpg"/>
-                            </span><img src="Imagenes/shadows.png"/>
-                                <h4>
-                                    <strong>JAS-ORGANIC</strong>
-                                </h4>
-                                <p>Procedimiento para la inspección y certificación de productos orgánicos de acuerdo con las normas JAS- Organic de Japón.</p>
-                               <!-- <a href="#" class="btn btn-light">Learn More</a>-->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item cont-proc">
-                                <span class="fa-stack fa-4x">
-								<img src="Imagenes/pic3.jpg"/>
-                            </span><img src="Imagenes/shadows.png"/>
-                                <h4>
-                                    <strong>BIRD FRIENDLY</strong>
-                                </h4>
-                                <p>Procedimientos para la inspección y ceritifación para Café Bajo sombra "Cafe Bird Friendly".</p>
-                                <!--<a href="#" class="btn btn-light">Learn More</a>-->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item cont-proc">
-                                <span class="fa-stack fa-4x">
-								<img src="Imagenes/pic5.jpg"/>
-                            </span><img src="Imagenes/shadows.png"/>
-                                <h4>
-                                    <strong>SIMBOLO DE PEQUEÑOS PRODUCTORES</strong>
-                                </h4>
-                                <p>Procedimiento para la inspección y certificación de las normas de Símbolo de Pequeños Productores</p>
-                                <!--<a href="#" class="btn btn-success">Learn More</a>-->
-                            </div>
-                        </div>
+                        <div class="service-item cont-proc flip-container" ontouchstart="this.classList.toggle('hover');">
+						    <div class="flipper">
+						      <div class="front">
+						        <img src="Imagenes/logo_certimex.jpeg" alt="certimex logo">
+						      </div>
+						      <div class="back" style="border-color:#008001">
+						        <h3>INSPECCIÓN Y CERTIFICACIÓN</h3>
+						        <p>Procedimiento para la inspeción y certificación de productos orgánicos.</p>
+						      </div>
+						    </div>
+						  </div>
+						 </div>
+						 <div class="col-md-3 col-sm-6">
+						   <div class="service-item cont-proc flip-container" ontouchstart="this.classList.toggle('hover');">
+						    <div class="flipper">
+						      <div class="front">
+						        <img src="Imagenes/JAS_LOGO.jpeg" alt="JAS logo">
+						      </div>
+						      <div class="back" style="border-color: #1d6f41">
+						        <h3>JAS-ORGNANIC</h3>
+						        <p>Procedimiento para la inspección y certificación de productos orgánicos de acuerdo con las normas JAS- Organic de Japón.</p>
+						      </div>
+						    </div>
+						  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6">
+                          <div class="service-item cont-proc flip-container" ontouchstart="this.classList.toggle('hover');">
+						    <div class="flipper">
+						      <div class="front">
+						        <img src="Imagenes/Logo_BF.png" alt="BF logo">
+						      </div>
+						      <div class="back" style="border-color:#7b4a00">
+						        <h3>BIRD FRIENDLY</h3>
+						        <p>Procedimientos para la inspección y ceritifación para Café Bajo sombra "Cafe Bird Friendly".</p>
+
+						      </div>
+						    </div>
+						  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6">
+                          	<div class="service-item cont-proc flip-container" ontouchstart="this.classList.toggle('hover');">
+						    <div class="flipper">
+						      <div class="front">
+						        <img src="Imagenes/Logo_SPP.jpeg" alt="SPP logo">
+						      </div>
+						      <div class="back" style="border-color: #7c1100">
+						        <h3>SIMBOLO DE PEQUEÑOS PRODUCTORES</h3>
+						        <p>Procedimiento para la inspección y certificación de las normas de Símbolo de Pequeños Productores.</p>
+
+						      </div>
+						    </div>
+						  </div>
+						  </div>
                     </div>
                     <!-- /.row (nested) -->
                 </div>
@@ -436,7 +442,7 @@ session_start();
 				<div class="col-md-12" style="padding-top:2%">
                     <div class="panel panel-default" style="border:0px">
                         <div class="panel-heading" style="background-color:rgba(0, 0, 0, 0.0); border:0px">
-							<h2 class="section-title" style="color:black; font-family: 'quarto'; font-size: 60px;" >ULTIMAS NOTICIAS</h2>
+							<h2 class="section-title" style="color:black;" >ULTIMAS NOTICIAS</h2>
                         </div>
 						
 						<!--===NUEVA SECCION NOTICIAS">>>-->

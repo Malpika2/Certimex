@@ -448,7 +448,6 @@ color:#white;
 
 #procedimientos .cont-proc{
 	text-align:center;
-	background-image:url(../../imagenes/shadows.png);
 	background-size:100%;
 	background-repeat:no-repeat;
 }
@@ -1016,6 +1015,20 @@ text-shadow: 0 1px 2px rgba(0,0,0,.6);
 }
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
+
+  #myCarousel h2{
+    font-size: 40px;
+  }
+
+  #myCarousel h3{
+    font-size: 20px;
+  }
+   #procedimientos h2{
+    font-size: 30px;
+  }
+  #ultimasn h2{
+    font-size: 30px;
+  }
   .navbar-collapse {
     border-top: none;
     -webkit-box-shadow: none;
@@ -1084,6 +1097,20 @@ text-shadow: 0 1px 2px rgba(0,0,0,.6);
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  #myCarousel h2{
+    font-size: 75px;
+  }
+
+  #myCarousel h3{
+    font-size: 25px;
+  }
+  #procedimientos h2{
+    font-size: 50px;
+  }
+  #ultimasn h2{
+    font-size: 50px;
+  }
 	.header{
 		font-size:13px;
 	}
@@ -1108,6 +1135,20 @@ text-shadow: 0 1px 2px rgba(0,0,0,.6);
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+  #myCarousel h2{
+    font-size: 75px;
+  }
+
+  #myCarousel h3{
+    font-size: 30px;
+  }
+   #procedimientos h2{
+    font-size: 60px;
+  }
+  #ultimasn h2{
+    font-size:60px;
+  }
 	.header{
 		font-size:17px;
 	}
@@ -1138,6 +1179,21 @@ text-shadow: 0 1px 2px rgba(0,0,0,.6);
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+   #procedimientos h2{
+    font-size: 60px;
+    font-family: 'quarto';
+  }
+
+  #myCarousel h2{
+    font-size: 75px;
+  }
+  #myCarousel h3{
+    font-size: 30px;
+  }
+  #ultimasn h2{
+    font-family: 'quarto';
+    font-size: 60px;
+  }
   .hero-section .figure-holder .figure-image {
     width: 570px;
     bottom: 0;
