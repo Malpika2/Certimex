@@ -173,7 +173,8 @@ session_start();
    <section id="acerca"   style=" padding:0% 0% 0% 0%; background-color: rgba(255, 255, 255, 1);">
 	<div class="kontainer klearfix">
 		<div id="ditto-slider" class="carousel fade" data-ride="carousel" style="padding:5% 0% 0% 0%">
-				<div id="carousel-indicator-container">
+			<h2 style="padding-top: 20px;"><b style="font-family: 'quarto';font-size: 60px; color:black;">CONOCE:</b></h2>
+					<div id="carousel-indicator-container" style="background-color:red;">
 				
 					<div class="navbar-toggle" id="myNavbar2" style="background-color:rgba(255,255,255,0); float:inherit;" data-target="#myNavbar2" >
 						<a class=""href="#ditto-slider" data-slide="prev" style="float:left">
@@ -184,19 +185,23 @@ session_start();
 						</a>
 					</div>
 					<div class="collapse navbar-collapse" id="myNavbar">
-					<ol class="carousel-indicators" >
-						<li data-target="#ditto-slider" data-slide-to="0" style="" class="active">Acerca de</li>
-						<li data-target="#ditto-slider" data-slide-to="1" style="">Historia</li>
-						<li data-target="#ditto-slider" data-slide-to="2" style="">Misión</li>
-						<li data-target="#ditto-slider" data-slide-to="3" style="">Visión</li>
-						<li data-target="#ditto-slider" data-slide-to="4" style="">Valores</li>
-					</ol>
+						<div class="row carouse-indicators" style="display:contents;">
+						<div class="col-sm-1"></div>
+						<div data-target="#ditto-slider" data-slide-to="0"  class="active col-sm-2" style="cursor:pointer" ><div style="background-image:url(Imagenes/manzanalibros.png); background-repeat:no-repeat; background-position:center; background-size:100%;">Certimex</div></div>
+						<div data-target="#ditto-slider" data-slide-to="1"  class="col-sm-2" style="cursor:pointer"><div style="background-image:url(Imagenes/profesor.png); 		  background-repeat:no-repeat; background-position:center; background-size:100%;">Historia</div></div>
+						<div data-target="#ditto-slider" data-slide-to="2"  class="col-sm-2" style="cursor:pointer"><div style="background-image:url(Imagenes/goal.png); 		  background-repeat:no-repeat; background-position:center; background-size:100%;">Misión</div></div>
+						<div data-target="#ditto-slider" data-slide-to="3"  class="col-sm-2" style="cursor:pointer"><div style="background-image:url(Imagenes/manzanaVision.png);   	  background-repeat:no-repeat; background-position:center; background-size:100%;">Visión</div></div>
+						<div data-target="#ditto-slider" data-slide-to="4"  class="col-sm-2" style="cursor:pointer"><div style="background-image:url(Imagenes/nosotros.png); 		  background-repeat:no-repeat; background-position:center; background-size:100%;">Valores</div></div>
+						<div class="col-sm-1"></div>
+					</div>
 					</div>
 				</div>
+			
+}
 			<div class="carousel-inner">
 				<div class="item active">
-						<div class="carousel-caption" id="home-slide-1">
-							<div class="grid_12 omega sz-content">
+						<div class="carousel-caption" id="home-slide-1" style="">
+							<div class=" sz-content">
 								
 								<?php 
 								include("Procesos/conexion.php");
@@ -204,9 +209,14 @@ session_start();
 								$resultado=$mysqli->query($consulta);
 								$fila =$resultado->fetch_assoc();
 								$titulo2= strtoupper($fila['titulo']);
-								echo "<div class=\"carousel-image\"><img src=\"Imagenes/$fila[url]\" width=\"300\" height=\"200\"></div>";
-								echo "<div style=\"text-align:justify; height:440px; overflow:scroll; overflow-x:hidden;\"><h3>$titulo2</h3>";
-								echo nl2br("<p>$fila[informacion]</p>");
+								$info = nl2br($fila['informacion']);
+								echo "<div class=\"row\">";
+									echo "<div class=\"col-sm-12 col-md-8\">";
+										echo "<div style=\"text-align:justify; overflow:hidden; overflow-x:hidden;\"><h3>$titulo2</h3>";
+										echo "<p style=\"font-size:12px;\">$info</p></div>
+										</div>";
+									echo "<div class=\" col-sm-12 col-md-4\" style=\"height:400px;\">";
+									echo "<div class=\"fill\" style=\"background-image:url(Imagenes/$fila[url]);\"></div></div>";
 								echo "</div>";
 								?>	
 							</div>
@@ -214,88 +224,104 @@ session_start();
 				</div>
 
 				<div class="item">
-					<div class="carousel-caption" id="home-slide-1">
+					<div class="carousel-caption" id="home-slide-1" style="">
 						<div class="grid_12 omega sz-content">
-															<?php 
+								<?php 
 								include("Procesos/conexion.php");
 								$consulta="SELECT * FROM historia";
 								$resultado=$mysqli->query($consulta);
 								$fila =$resultado->fetch_assoc();
 								$titulo2= strtoupper($fila['titulo']);
-								echo "<div class=\"carousel-image\"><img src=\"Imagenes/$fila[url]\" width=\"300\" height=\"200\"></div>";
-								echo "<div style=\"text-align:justify; height:440px; overflow:scroll; overflow-x:hidden;\"><h3>$titulo2</h3>";
-								echo nl2br("<p>$fila[informacion]</p>");
+								$info = nl2br($fila['informacion']);
+								echo "<div class=\"row\">";
+									echo "<div class=\"col-sm-12 col-md-8\">";
+										echo "<div style=\"text-align:justify;  overflow:hidden; overflow-x:hidden;\"><h3>$titulo2</h3>";
+										echo "<p style=\"font-size:12px;\">$info</p></div>
+										</div>";
+									echo "<div class=\" col-sm-12 col-md-4\" style=\"height:400px;\">";
+									echo "<div class=\"fill\" style=\"background-image:url(Imagenes/$fila[url]);\"></div></div>";
 								echo "</div>";
 								?>	
 						</div>
 					</div>
 				</div>			
 				<div class="item">
-					<div class="carousel-caption" id="home-slide-1">
+					<div class="carousel-caption" id="home-slide-1" style="">
 						<div class="grid_12 omega sz-content">
-															<?php 
+								<?php 
 								include("Procesos/conexion.php");
 								$consulta="SELECT * FROM mision";
 								$resultado=$mysqli->query($consulta);
 								$fila =$resultado->fetch_assoc();
 								$titulo2= strtoupper($fila['titulo']);
-								echo "<div class=\"carousel-image\"><img src=\"Imagenes/$fila[url]\" width=\"300\" height=\"200\"></div>";
-								echo "<div style=\"text-align:justify; height:440px; overflow:scroll; overflow-x:hidden;\"><h3>$titulo2</h3>";
-								echo nl2br("<p>$fila[informacion]</p>");
+								$info = nl2br($fila['informacion']);
+								echo "<div class=\"row\">";
+									echo "<div class=\"col-sm-12 col-md-8\">";
+										echo "<div style=\"text-align:justify; overflow:hidden; overflow-x:hidden;\"><h3>$titulo2</h3>";
+										echo "<p style=\"font-size:12px;\">$info</p></div>
+										</div>";
+									echo "<div class=\" col-sm-12 col-md-4\" style=\"height:400px;\" >";
+									echo "<div class=\"fill\" style=\"background-image:url(Imagenes/$fila[url]);\"></div></div>";
 								echo "</div>";
 								?>	
 						</div>
 					</div>
 				</div>				
 				<div class="item">
-					<div class="carousel-caption" id="home-slide-1">
+					<div class="carousel-caption" id="home-slide-1" style="">
 						<div class="grid_12 omega sz-content">
-															<?php 
+								<?php 
 								include("Procesos/conexion.php");
 								$consulta="SELECT * FROM vision";
 								$resultado=$mysqli->query($consulta);
 								$fila =$resultado->fetch_assoc();
 								$titulo2= strtoupper($fila['titulo']);
-								echo "<div class=\"carousel-image\"><img src=\"Imagenes/$fila[url]\" width=\"300\" height=\"200\"></div>";
-								echo "<div style=\"text-align:justify; height:440px; overflow:scroll; overflow-x:hidden;\"><h3>$titulo2</h3>";
-								echo nl2br("<p>$fila[informacion]</p>");
+								$info = nl2br($fila['informacion']);
+								echo "<div class=\"row\">";
+									echo "<div class=\"col-sm-12 col-md-8\">";
+										echo "<div style=\"text-align:justify; overflow:hidden; overflow-x:hidden;\"><h3>$titulo2</h3>";
+										echo "<p style=\"font-size:12px;\">$info</p></div>
+										</div>";
+									echo "<div class=\" col-sm-12 col-md-4\" style=\"height:400px;\">";
+									echo "<div class=\"fill\" style=\"background-image:url(Imagenes/$fila[url]);\"></div></div>";
 								echo "</div>";
-								?>					
+								?>				
 						</div>
 					</div>
 				</div>
 
 				<div class="item">
-					<div class="carousel-caption" id="home-slide-1">
+					<div class="carousel-caption" id="home-slide-1" style="" >
 						<div class="grid_12 omega sz-content">
 						
-							<div class="carousel-image"><img src="Imagenes/valores.jpg" width="300" height="200"></div>
 							<h3>VALORES</h3>
 							<div class="row">
 								<div class="col-xs-6 col-sm-3 col-md-3" style="text-align:justify;">
 									<ul style="list-style-type:none">
-										<li><img src="Imagenes/honestidad.png" width="50px"/><b>Honestidad</b></br><p>Por vivir de forma congruente entre lo que se piensa y lo que se hace de manera justa, recta e íntegra.</p></li>
-										<li><img src="Imagenes/etica.png" width="50px"/><b>Ética</b> </br><p>Para actuar acorde a las normas morales.</p></li>
-										<li><img src="Imagenes/tolerancia.png" width="50px"/><b>Tolerancia</b> </br><p>Para la aceptación de una situación, o de otra persona o grupo considerado diferente</p></li>
+										<li><img src="Imagenes/honestidad.png" width="50px"/><b>Honestidad</b></br><p style="font-size:12px;">Por vivir de forma congruente entre lo que se piensa y lo que se hace de manera justa, recta e íntegra.</p></li>
+										
+										<li><img src="Imagenes/tolerancia.png" width="50px"/><b>Tolerancia</b> </br><p style="font-size:12px;">Para la aceptación de una situación, o de otra persona o grupo considerado diferente</p></li>
 										
 									</ul>
 								</div>
 								<div class="col-xs-6 col-sm-3 col-md-3" style="text-align:justify;">
 									<ul style="list-style-type:none">
-										<li><img src="Imagenes/equidad.png" width="50px"/><b>Equidad</b></br><p>Para propiciar el equilibrio entre la justicia y la ley.</p></li>
-										<li><img src="Imagenes/transparencia.png" width="50px"/><b>Transparencia</b></br><p>En las acciones que se realizan en la empresa.</p></li>
+										<li><img src="Imagenes/equidad.png" width="50px"/><b>Equidad</b></br><p style="font-size:12px;">Para propiciar el equilibrio entre la justicia y la ley.</p></li>
+										<li><img src="Imagenes/transparencia.png" width="50px"/><b>Transparencia</b></br><p style="font-size:12px;">En las acciones que se realizan en la empresa.</p></li>
+										<li><img src="Imagenes/etica.png" width="50px"/><b>Ética</b> </br><p style="font-size:12px;">Para actuar acorde a las normas morales.</p></li>
 									</ul>
 								</div><div class="col-xs-6 col-sm-3 col-md-3" style="text-align:justify;">
 									<ul style="list-style-type:none">
-										<li><img src="Imagenes/respeto.png" width="50px"/><b>Respeto</b></br><p>Para reconocer, apreciar y valorar a mi persona, a los demás, y el entorno.</p></li>
-										<li><img src="Imagenes/responsabilidad.png" width="50px"/><b>Responsabilidad</b></br><p>Para tener obligación moral y compromiso.</p></li>
-										<li><img src="Imagenes/confidencialidad.png" width="50px"/><b>Confidencialidad</b></br><p>Para mantener en reserva la información y acciones que se realicen dentro y fuera de CERTIMEX.</p></li>
+										<li><img src="Imagenes/respeto.png" width="50px"/><b>Respeto</b></br><p style="font-size:12px;">Para reconocer, apreciar y valorar a mi persona, a los demás, y el entorno.</p></li>
+										<li><img src="Imagenes/dignidad.png" width="50px"/><b>Dignidad</b></br><p style="font-size:12px;">Basada en el reconocimiento de la persona de ser merecedora de respeto.</p></li>
 										
 									</ul>
 								</div><div class="col-xs-6 col-sm-3 col-md-3" style="text-align:justify;">
 									<ul style="list-style-type:none">
-										<li><img src="Imagenes/lealtad.png" width="50px"/><b>Lealtad</b></br><p>Para ser firmes con la filosofía de CERTIMEX y con cada uno de sus clientes.</p></li>
-										<li><img src="Imagenes/dignidad.png" width="50px"/><b>Dignidad</b></br><p>Basada en el reconocimiento de la persona de ser merecedora de respeto.</p></li>
+										<li><img src="Imagenes/lealtad.png" width="50px"/><b>Lealtad</b></br><p style="font-size:12px;">Para ser firmes con la filosofía de CERTIMEX y con cada uno de sus clientes.</p></li>
+										<li><img src="Imagenes/responsabilidad.png" width="50px"/><b>Responsabilidad</b></br><p style="font-size:12px;">Para tener obligación moral y compromiso.</p></li>
+										<li><img src="Imagenes/confidencialidad.png" width="50px"/><b>Confidencialidad</b></br><p style="font-size:12px;">Para mantener en reserva la información y acciones que se realicen dentro y fuera de CERTIMEX.</p></li>
+										
 									</ul>
 								</div>
 							</div>
