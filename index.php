@@ -173,7 +173,7 @@ session_start();
    <section id="acerca"   style=" padding:0% 0% 0% 0%; background-color: rgba(255, 255, 255, 1);">
 	<div class="kontainer klearfix">
 		<div id="ditto-slider" class="carousel fade" data-ride="carousel" style="padding:5% 0% 0% 0%">
-			<h2 style="padding-top: 20px;"><b style="font-family: 'quarto';font-size: 60px; color:black;">Acerca de CERTIMEX:</b></h2>
+			<h2 style="padding-top: 20px;"><b style="font-family: 'quarto'; color:black;">Acerca de CERTIMEX:</b></h2>
 
 			
 }
