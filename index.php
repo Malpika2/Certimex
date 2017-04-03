@@ -173,29 +173,8 @@ session_start();
    <section id="acerca"   style=" padding:0% 0% 0% 0%; background-color: rgba(255, 255, 255, 1);">
 	<div class="kontainer klearfix">
 		<div id="ditto-slider" class="carousel fade" data-ride="carousel" style="padding:5% 0% 0% 0%">
-			<h2 style="padding-top: 20px;"><b style="font-family: 'quarto';font-size: 60px; color:black;">CONOCE:</b></h2>
-					<div id="carousel-indicator-container" style="background-color:red;">
-				
-					<div class="navbar-toggle" id="myNavbar2" style="background-color:rgba(255,255,255,0); float:inherit;" data-target="#myNavbar2" >
-						<a class=""href="#ditto-slider" data-slide="prev" style="float:left">
-						<i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>
-						</a>
-						<a class="" href="#ditto-slider" data-slide="next" style="float:right">
-						<i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>
-						</a>
-					</div>
-					<div class="collapse navbar-collapse" id="myNavbar">
-						<div class="row carouse-indicators" style="display:contents;">
-						<div class="col-sm-1"></div>
-						<div data-target="#ditto-slider" data-slide-to="0"  class="active col-sm-2" style="cursor:pointer" ><div style="background-image:url(Imagenes/manzanalibros.png); background-repeat:no-repeat; background-position:center; background-size:100%;">Certimex</div></div>
-						<div data-target="#ditto-slider" data-slide-to="1"  class="col-sm-2" style="cursor:pointer"><div style="background-image:url(Imagenes/profesor.png); 		  background-repeat:no-repeat; background-position:center; background-size:100%;">Historia</div></div>
-						<div data-target="#ditto-slider" data-slide-to="2"  class="col-sm-2" style="cursor:pointer"><div style="background-image:url(Imagenes/goal.png); 		  background-repeat:no-repeat; background-position:center; background-size:100%;">Misión</div></div>
-						<div data-target="#ditto-slider" data-slide-to="3"  class="col-sm-2" style="cursor:pointer"><div style="background-image:url(Imagenes/manzanaVision.png);   	  background-repeat:no-repeat; background-position:center; background-size:100%;">Visión</div></div>
-						<div data-target="#ditto-slider" data-slide-to="4"  class="col-sm-2" style="cursor:pointer"><div style="background-image:url(Imagenes/nosotros.png); 		  background-repeat:no-repeat; background-position:center; background-size:100%;">Valores</div></div>
-						<div class="col-sm-1"></div>
-					</div>
-					</div>
-				</div>
+			<h2 style="padding-top: 20px;"><b style="font-family: 'quarto';font-size: 60px; color:black;">Acerca de CERTIMEX:</b></h2>
+
 			
 }
 			<div class="carousel-inner">
@@ -330,6 +309,28 @@ session_start();
 					</div>
 				</div>
 			</div>
+					<div id="carousel-indicator-container" style="background-color:red;">
+				
+					<div class="navbar-toggle" id="myNavbar2" style="background-color:rgba(255,255,255,0); float:inherit;" data-target="#myNavbar2" >
+						<a class=""href="#ditto-slider" data-slide="prev" style="float:left">
+						<i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>
+						</a>
+						<a class="" href="#ditto-slider" data-slide="next" style="float:right">
+						<i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<div class="row carouse-indicators" style="display:contents;">
+						<div class="col-sm-1"></div>
+						<div data-target="#ditto-slider" data-slide-to="0"  class="active col-sm-2" style="cursor:pointer; height:100px;" ><div style=""><img class="fill" src="Imagenes/manzanalibros.png"/>Certimex</div></div>
+						<div data-target="#ditto-slider" data-slide-to="1"  class="col-sm-2" style="cursor:pointer"><div style=""><img src="Imagenes/profesor.png" style="height:50%;"/>Historia</div></div>
+						<div data-target="#ditto-slider" data-slide-to="2"  class="col-sm-2" style="cursor:pointer"><div style=""><img src="Imagenes/goal.png"/>Misión</div></div>
+						<div data-target="#ditto-slider" data-slide-to="3"  class="col-sm-2" style="cursor:pointer"><div style=""><img src="Imagenes/manzanaVision.png"/>Visión</div></div>
+						<div data-target="#ditto-slider" data-slide-to="4"  class="col-sm-2" style="cursor:pointer"><div style=""><img class="fill" src="Imagenes/network.png"/>Valores</div></div>
+						<div class="col-sm-1"></div>
+					</div>
+					</div>
+				</div>
 		</div>
 	
 			<!--<a href="#" class="about-btn">Learn More</a>-->
