@@ -170,14 +170,43 @@ session_start();
 </div>
 
 <!-- =====================================================================CONOZCANOS seccion========================= -->
-   <section id="acerca"   style=" padding:0% 0% 0% 0%; background-color: rgba(255, 255, 255, 1);">
+   <section id="acerca"   style=" padding:0% 0% 0% 0%; background-color: rgba( 225, 233, 214 , 1); display: inline-block;">
 	<div class="kontainer klearfix">
 		<div id="ditto-slider" class="carousel fade" data-ride="carousel" style="padding:5% 0% 0% 0%">
 			<h2 style="padding-top: 20px;"><b style="font-family: 'quarto'; color:black;">Acerca de CERTIMEX:</b></h2>
 
-			
-}
-			<div class="carousel-inner">
+			<div id="carousel-indicator-container" style="background-color:;">	
+				<div class="navbar-toggle" id="myNavbar2" style="background-color:rgba(225, 233, 214 , 1); float:inherit;" data-target="#myNavbar2" >
+			   		<a class=""href="#ditto-slider" data-slide="prev" style="float:left">
+						<i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>
+						</a>
+						<a class="" href="#ditto-slider" data-slide="next" style="float:right">
+						<i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<hr style="border-color: #759642;">
+					<div class="row carouse-indicators" style="display:contents;">
+
+						<div class="col-sm-1"></div>
+						<div data-target="#ditto-slider" data-slide-to="0"  class="col-sm-2 menuac" style="cursor:pointer;">
+							<div style="padding: 5%; margin-bottom: -20px" class=""><img src="Imagenes/manzanalibros.png" style="height:60px;"/><p>CERTIMEX</p></div></div>
+						<div data-target="#ditto-slider" data-slide-to="1"  class="col-sm-2 menuac" style="cursor:pointer">
+							<div style="padding: 5%; margin-bottom: -20px" class=""><img src="Imagenes/profesor.png" style="height:60px;"/><p>HISTORIA</p></div></div>
+						<div data-target="#ditto-slider" data-slide-to="2"  class="col-sm-2 menuac" style="cursor:pointer">
+							<div style="padding: 5%; margin-bottom: -20px"><img src="Imagenes/goal.png" style="height:60px;"/><p>MISIÓN</p></div></div>
+						<div data-target="#ditto-slider" data-slide-to="3"  class="col-sm-2 menuac" style="cursor:pointer">
+							<div style="padding: 5%; margin-bottom: -20px"><img src="Imagenes/manzanaVision.png" style="height:60px;"/><p>VISIÓN</p></div></div>
+						<div data-target="#ditto-slider" data-slide-to="4"  class="col-sm-2 menuac" style="cursor:pointer">
+							<div style="padding: 5%; margin-bottom: -20px"><img src="Imagenes/network2.png" style="height:60px;"/><p>VALORES</p></div></div>
+						<div class="col-sm-1"></div>
+
+					</div>
+					<hr style="border-color:#759642">
+				</div>
+			</div>
+
+			<div class="carousel-inner" style="height: 100%; top:-58px">
 				<div class="item active">
 						<div class="carousel-caption" id="home-slide-1" style="">
 							<div class=" sz-content">
@@ -309,28 +338,6 @@ session_start();
 					</div>
 				</div>
 			</div>
-					<div id="carousel-indicator-container" style="background-color:red;">
-				
-					<div class="navbar-toggle" id="myNavbar2" style="background-color:rgba(255,255,255,0); float:inherit;" data-target="#myNavbar2" >
-						<a class=""href="#ditto-slider" data-slide="prev" style="float:left">
-						<i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>
-						</a>
-						<a class="" href="#ditto-slider" data-slide="next" style="float:right">
-						<i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>
-						</a>
-					</div>
-					<div class="collapse navbar-collapse" id="myNavbar">
-						<div class="row carouse-indicators" style="display:contents;">
-						<div class="col-sm-1"></div>
-						<div data-target="#ditto-slider" data-slide-to="0"  class="active col-sm-2" style="cursor:pointer; height:100px;" ><div style=""><img class="fill" src="Imagenes/manzanalibros.png"/>Certimex</div></div>
-						<div data-target="#ditto-slider" data-slide-to="1"  class="col-sm-2" style="cursor:pointer"><div style=""><img src="Imagenes/profesor.png" style="height:50%;"/>Historia</div></div>
-						<div data-target="#ditto-slider" data-slide-to="2"  class="col-sm-2" style="cursor:pointer"><div style=""><img src="Imagenes/goal.png"/>Misión</div></div>
-						<div data-target="#ditto-slider" data-slide-to="3"  class="col-sm-2" style="cursor:pointer"><div style=""><img src="Imagenes/manzanaVision.png"/>Visión</div></div>
-						<div data-target="#ditto-slider" data-slide-to="4"  class="col-sm-2" style="cursor:pointer"><div style=""><img class="fill" src="Imagenes/network.png"/>Valores</div></div>
-						<div class="col-sm-1"></div>
-					</div>
-					</div>
-				</div>
 		</div>
 	
 			<!--<a href="#" class="about-btn">Learn More</a>-->
@@ -338,7 +345,7 @@ session_start();
 	</section>
    
 <!-- =========================  SERVICIOS SECCION ============ -->
-<section id="servicios" class="servicios fill"  style=" padding:0% 0% 0% 0%; background-image: url('Imagenes/mesanegraverduras.jpg'); min-height: 500px">
+<section id="servicios" class="servicios fill"  style=" padding:0% 0% 0% 0%; background-image: url('Imagenes/mesanegraverduras.jpg'); min-height: 500px;">
 <div class="slide-section destination" id="servicios" page-slide="3" style="padding-top: 0%; width:100%; height: 100%">
 	<div class="kontainer klearfix">
 		<div id="content" class="grid_12 destination-up" page-slide="4">
@@ -346,9 +353,9 @@ session_start();
 			
 			<h2 style="padding-top: 20px;"><b style="font-family: 'quarto';font-size: 60px; color:white;">NUESTROS SERVICIOS</b></h2>
 			<hr style="margin-top: 8px; margin-bottom: 0px;">
-					<div id="slider1" style="height:600px; padding-top:15px; background: black;">
-						<a class="buttons prev" href="#">&#60;</a>
-						<div class="viewport" style="height:100%">
+					<div id="slider1" style="height:100%; padding-top:15px;">
+						<a class="buttons prev" href="#"></a>
+						<div class="viewport" style="height:320px;">
 							<ul class="overview">
 								<?php
 								include("Procesos/conexion.php");
@@ -389,7 +396,7 @@ session_start();
 </section>
 
 <!-- =========================  PROCEDIMIENTOS SECCION ============ -->
- <section id="procedimientos" class="services bg-primary" style="background-color:#f8f5f0">
+ <section id="procedimientos" class="services bg-primary" style="background-color:#f8f5f0;">
         <div class="container" style="padding:2% 0% 1% 0%">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
@@ -437,7 +444,7 @@ session_start();
 						    </div>
 						  </div>
 						  </div>
-						  <div class="col-md-3 col-sm-6">
+						  <div class="col-md-3 col-sm-6 ">
                           	<div class="service-item cont-proc flip-container" ontouchstart="this.classList.toggle('hover');">
 						    <div class="flipper">
 						      <div class="front">
@@ -463,13 +470,13 @@ session_start();
 	
 
 <!-- =========================  NOTICIAS SECCION ============ -->
-<section id="ultimasn" class="ultimasn">
+<section id="ultimasn" class="ultimasn" style="background-color: #65997d">
         <div id="ultimasn" class="ultimasn">
         <div class="container text-center">
 				<div class="col-md-12" style="padding-top:2%">
-                    <div class="panel panel-default" style="border:0px">
-                        <div class="panel-heading" style="background-color:rgba(0, 0, 0, 0.0); border:0px">
-							<h2 class="section-title" style="color:black;" >ULTIMAS NOTICIAS</h2>
+                    <div class="panel panel-default" style="border:1px; background-color:rgba(0,0,0,0.3);">
+                        <div class="panel-heading" style="background-color:rgba(0,0,0,0.5); border:0px">
+							<h2 class="section-title" style="color:white;" >ULTIMAS NOTICIAS</h2>
                         </div>
 						
 						<!--===NUEVA SECCION NOTICIAS">>>-->
@@ -534,14 +541,14 @@ session_start();
 														?> 
 														</ol>
 								</div>
-								<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+								<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding-left: 0px;">
 									<div class="table-responsive">
 										<!--table class="table table-bordered table-hover" id="example"-->
 										<table id="example" class="display table table-bordered" cellspacing="0" width="100%" >
 											<thead>
 												<tr>
-												<th>CERTIMEX</th>
-												<th>Noticias Recientes</th>
+												<th></th>
+												<th style="color:white; text-align: center">Noticias Recientes</th>
 												</tr>
 											</thead>
 											<tbody>
@@ -551,9 +558,9 @@ session_start();
 												$resultado= $mysqli->query($consulta);
 												
 												while($fila = $resultado->fetch_row()){
-													echo "<tr>";
+													echo "<tr style=\"background:transparent;\">";
 													echo "<td><div><img src=\"certimexx/$fila[3]\"/></div></td>";
-													echo "<td style=\"text-align:justify\"><form class=\"\" role=\form\" method=\"GET\" action=\"noticias.php\"><div style='width:200px;'><button type=\"submit\" style=\"padding-top:10%; font-size:18px; color:green;\" class=\"btn btn-link\">$fila[1]</button></div>
+													echo "<td style=\"text-align:justify\"><form class=\"\" role=\form\" method=\"GET\" action=\"noticias.php\"><div style='width:200px;'><button type=\"submit\" style=\"padding-top:10%; font-size:18px; color:#4cd818;\" class=\"btn btn-link\">$fila[1]</button></div>
 													<div class=\"\"><input class=\"\" name=\"id_noticias\" value=\"$fila[0]\" type=\"hidden\"/></div></form></td>";
 													echo "</tr>";
 												}
