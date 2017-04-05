@@ -173,7 +173,7 @@ session_start();
    <section id="acerca"   style=" padding:0% 0% 0% 0%; background-color: rgba( 225, 233, 214 , 1);">
 	<div class="kontainer klearfix">
 		<div id="ditto-slider" class="carousel fade" data-ride="carousel" style="padding:5% 0% 0% 0%">
-			<h2 style="padding-top: 20px;"><b style="font-family: 'quarto'; color:black;">Acerca de CERTIMEX:</b></h2>
+			<h2 style="padding-top: 20px;"><b style="font-family: 'prime'; color:black;">CERTIMEX:</b></h2>
 
 			<div id="carousel-indicator-container" style="background-color:;">	
 				<div class="navbar-toggle" id="myNavbar2" style="background-color:rgba(225, 233, 214 , 1); float:inherit;" data-target="#myNavbar2" >
@@ -351,7 +351,7 @@ session_start();
 		<div id="content" class="grid_12 destination-up" page-slide="4">
 
 			
-			<h2 style="padding-top: 20px;"><b style="font-family: 'quarto';font-size: 60px; color:white;">NUESTROS SERVICIOS</b></h2>
+			<h2 style="padding-top: 20px;"><b style="font-family: 'prime';font-size: 60px; color:white;">NUESTROS SERVICIOS</b></h2>
 			<hr style="margin-top: 8px; margin-bottom: 0px;">
 					<div id="slider1" style="height:100%; padding-top:15px;">
 						<a class="buttons prev" href="#"></a>
@@ -476,7 +476,7 @@ session_start();
 				<div class="col-md-12" style="padding-top:2%">
                     <div class="panel panel-default" style="border:1px; background-color:rgba(0,0,0,0.3);">
                         <div class="panel-heading" style="background-color:rgba(0,0,0,0.5); border:0px">
-							<h2 class="section-title" style="color:white;" >ULTIMAS NOTICIAS</h2>
+							<h2 class="section-title" style="color:white; font-family: 'prime';" >ULTIMAS NOTICIAS</h2>
                         </div>
 						
 						<!--===NUEVA SECCION NOTICIAS">>>-->
@@ -691,7 +691,7 @@ session_start();
 <section id="contacto" class="contacto-section" style="padding:0% 0% 0% 0%">
 		<div id="contacto" class="contacto-section">
 			<div class="container">
-				<h2 class="section-title" style="text-align: center;">¿Esta listo para comenzar su certificaciòn?</h2>
+				<h2 class="section-title" style="text-align: center; font-family: 'prime'">¿Esta listo para comenzar su certificaciòn?</h2>
 				<p style="text-align: center; color:#eee;">¡Nosotros También! Rellene el siguiente formulario y nos pondremos en contacto con usted.</p>
 				<hr>
 				<div class="row">
