@@ -170,7 +170,7 @@ session_start();
 </div>
 
 <!-- =====================================================================CONOZCANOS seccion========================= -->
-   <section id="acerca"   style=" padding:0% 0% 0% 0%; background-color: rgba( 225, 233, 214 , 1); display: inline-block;">
+   <section id="acerca"   style=" padding:0% 0% 0% 0%; background-color: rgba( 225, 233, 214 , 1);">
 	<div class="kontainer klearfix">
 		<div id="ditto-slider" class="carousel fade" data-ride="carousel" style="padding:5% 0% 0% 0%">
 			<h2 style="padding-top: 20px;"><b style="font-family: 'quarto'; color:black;">Acerca de CERTIMEX:</b></h2>
@@ -346,7 +346,7 @@ session_start();
    
 <!-- =========================  SERVICIOS SECCION ============ -->
 <section id="servicios" class="servicios fill"  style=" padding:0% 0% 0% 0%; background-image: url('Imagenes/mesanegraverduras.jpg'); min-height: 500px;">
-<div class="slide-section destination" id="servicios" page-slide="3" style="padding-top: 0%; width:100%; height: 100%">
+<div class="slide-section destination" id="servicios" page-slide="3" style="width:100%; height: 100%">
 	<div class="kontainer klearfix">
 		<div id="content" class="grid_12 destination-up" page-slide="4">
 
@@ -692,7 +692,7 @@ session_start();
 		<div id="contacto" class="contacto-section">
 			<div class="container">
 				<h2 class="section-title" style="text-align: center;">¿Esta listo para comenzar su certificaciòn?</h2>
-				<p style="text-align: center;">¡Nosotros También! Rellene el siguiente formulario y nos pondremos en contacto con usted.</p>
+				<p style="text-align: center; color:#eee;">¡Nosotros También! Rellene el siguiente formulario y nos pondremos en contacto con usted.</p>
 				<hr>
 				<div class="row">
 				
